@@ -32,5 +32,10 @@ public class CourseController {
 		System.out.println(courseDto.getCourseName());
 		courseService.addCourse(courseDto);
 	}
+	
+	@RequestMapping(method=RequestMethod.POST,value="/updateCourse/{id}")
+	public void updateCourse(@RequestBody CourseDto courseDto,@PathVariable Integer id) {
+		courseService.updateCourse(courseDto,id);
+	}
 
 }

@@ -29,4 +29,12 @@ public class CourseService {
 		courses.add(courseDto);
 	}
 	
+	public void updateCourse(CourseDto courseDto, Integer id) {
+		for (CourseDto courseDto2 : courses) {
+			if(courseDto2.getCourseId()==id) {
+				courses.set(id, courseDto);
+			}
+		}
+	}
+	
 }
