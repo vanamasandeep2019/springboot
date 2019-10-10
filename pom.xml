@@ -5,6 +5,13 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Spring Boot Course API</name>
   
+  <!-- 
+  
+  1) The spring-boot-starter-parent dependency is the parent POM providing dependency and plugin management for Spring Boot-based applications. 
+  2) It contains the default versions of Java to use, the default versions of dependencies that Spring Boot uses, and the default configuration of the Maven plugins.
+  3) The spring-boot-starter-parent dependency further inherits from spring-boot-dependencies
+   -->
+  
   <parent>
 	  <groupId>org.springframework.boot</groupId>
 	  <artifactId>spring-boot-starter-parent</artifactId>
@@ -12,6 +19,9 @@
   </parent>
   
   <dependencies>
+  
+  <!-- Starter for building web, including RESTful, applications using Spring MVC. Uses Tomcat as the default embedded container -->
+  
   <dependency>
 	  <groupId>org.springframework.boot</groupId>
 	  <artifactId>spring-boot-starter-web</artifactId>
