@@ -8,6 +8,10 @@ public class CourseDto {
 	
 	private Double coursePrice;
 	
+	public CourseDto() {
+		
+	}
+	
 	public CourseDto(String courseName,Integer courseId,Double coursePrice){
 		this.courseName=courseName;
 		this.courseId=courseId;
